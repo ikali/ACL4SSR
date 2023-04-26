@@ -20,7 +20,3 @@ PROCESS-NAME,emule.exe
 PROCESS-NAME,Share.exe
 PROCESS-NAME,uTorrent.exe
 PROCESS-NAME,tixati_Windows32bit.exe
-
-# 最终规则
-GEOIP,CN,DIRECT
-MATCH,🎏 漏网之鱼

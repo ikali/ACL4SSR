@@ -155,7 +155,7 @@ add_emoji = true
 remove_old_emoji = true
 
 [[emojis.emoji]]
+match = "(?i:Bandwidth|expire|官|流量|时间|应急|更新|订阅|失联|剩余|永久|地址|升级|群|[^-]期)"
 emoji = '🏳️‍🌈'
-import = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/base/emoji.toml"
 
 clash_proxies_style = "flow"

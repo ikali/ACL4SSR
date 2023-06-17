@@ -154,7 +154,7 @@ ruleset = "[]FINAL"
 add_emoji = true
 remove_old_emoji = true
 
-[[emojis.emoji]]
+[[emoji]]
 match = "(?i:Bandwidth|expire|官|流量|时间|应急|更新|订阅|失联|剩余|永久|地址|升级|群|[^-]期)"
 emoji = "🏳️‍🌈"
 

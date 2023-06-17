@@ -74,14 +74,6 @@ rule = [
 ]
 
 [[custom_groups]]
-name = "🎯 全球直连"
-type = "select"
-rule = [
-    "[]DIRECT",
-    "[]♨️ 手动选择"
-]
-
-[[custom_groups]]
 name = "♻️ 自动选择"
 type = "url-test"
 rule = [

@@ -84,6 +84,7 @@ rule = [
 [[custom_groups]]
 name = "♻️ 自动选择"
 type = "url-test"
+lazy = true
 rule = [
     "[]🇯🇵 夜桜秘湯",
     "[]🇭🇰 蜡笔王国",
@@ -94,11 +95,11 @@ rule = [
 url = "http://www.apple.com/library/test/success.html"
 interval = 300
 tolerance = 100
-lazy = true
 
 [[custom_groups]]
 name = "🔯 故障转移"
 type = "fallback"
+lazy = true
 rule = [
     "[]🇯🇵 夜桜秘湯",
     "[]🇭🇰 蜡笔王国",
@@ -108,12 +109,12 @@ rule = [
 ]
 url = "http://www.apple.com/library/test/success.html"
 interval = 300
-lazy = true
 
 [[custom_groups]]
 name = "🔮 负载均衡"
 type = "load-balance"
 strategy = "round-robin"
+lazy = true
 rule = [
     "[]🇯🇵 夜桜秘湯",
     "[]🇭🇰 蜡笔王国",
@@ -123,16 +124,15 @@ rule = [
 ]
 url = "http://www.apple.com/library/test/success.html"
 interval = 300
-lazy = true
 
 [[custom_groups]]
 name = "🏮 冷门负载"
 type = "load-balance"
 strategy = "round-robin"
+lazy = true
 rule = [".*^(?!.*(🇯🇵|🇭🇰|🇹🇼|🇸🇬|🇺🇸|🇨🇳|IPLC))"]
 url = "http://www.apple.com/library/test/success.html"
 interval = 300
-lazy = true
 
 [[rulesets]]
 group = "❄️ 节点选择"

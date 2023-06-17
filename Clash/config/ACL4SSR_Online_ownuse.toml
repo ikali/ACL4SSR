@@ -149,3 +149,5 @@ ruleset = "[]GEOIP,CN"
 [[rulesets]]
 group = "🎏 漏网之鱼"
 ruleset = "[]FINAL"
+
+clash_proxies_style = "flow"

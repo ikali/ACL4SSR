@@ -1,0 +1,147 @@
+version = 1
+[custom]
+enable_rule_generator = true
+overwrite_original_rules = true
+clash_rule_base = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/base/ownuseClashConfig.yml"
+
+[[custom_groups]]
+name = "❄️ 节点选择"
+type = "select"
+rule = [
+    "[]🇯🇵 夜桜秘湯",
+    "[]🇭🇰 蜡笔王国",
+    "[]🇹🇼 蓬萊玉枝",
+    "[]🇸🇬 星空浴場",
+    "[]🇺🇸 陽光海岸",
+    "[]♨️ 手动选择",
+    "[]♻️ 自动选择",
+    "[]🔯 故障转移",
+    "[]🔮 负载均衡",
+    "[]🏮 冷门负载"
+]
+
+[[custom_groups]]
+name = "♨️ 手动选择"
+type = "select"
+rule = [".*"]
+
+[[custom_groups]]
+name = "🎏 漏网之鱼"
+type = "select"
+rule = [
+    ".*",
+    "[]DIRECT"
+]
+
+[[custom_groups]]
+name = "🇯🇵 夜桜秘湯"
+type = "select"
+rule = [
+    "(🇯🇵|JP|Japan|日本|东京|大阪|埼玉|[^-]日)",
+    "[]REJECT"
+]
+
+[[custom_groups]]
+name = "🇭🇰 蜡笔王国"
+type = "select"
+rule = [
+    "(🇭🇰|HK|Hong Kong|HongKong|[^-]港)",
+    "[]REJECT"
+]
+
+[[custom_groups]]
+name = "🇹🇼 蓬萊玉枝"
+type = "select"
+rule = [
+    "(🇹🇼|TW|Taiwan|[^-]台|新北|彰化|HINET)",
+    "[]REJECT"
+]
+
+[[custom_groups]]
+name = "🇸🇬 星空浴場"
+type = "select"
+rule = [
+    "(🇸🇬|SG|Singapore|新加坡|狮城|[^-]新)",
+    "[]REJECT"
+]
+
+[[custom_groups]]
+name = "🇺🇸 陽光海岸"
+type = "select"
+rule = [
+    "(🇺🇸|US|United States|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥)",
+    "[]REJECT"
+]
+
+[[custom_groups]]
+name = "🎯 全球直连"
+type = "select"
+rule = [
+    "[]DIRECT",
+    "[]♨️ 手动选择"
+]
+
+[[custom_groups]]
+name = "♻️ 自动选择"
+type = "url-test"
+rule = [
+    "[]🇯🇵 夜桜秘湯",
+    "[]🇭🇰 蜡笔王国",
+    "[]🇹🇼 蓬萊玉枝",
+    "[]🇸🇬 星空浴場",
+    "[]🇺🇸 陽光海岸"
+]
+url = "http://www.apple.com/library/test/success.html"
+interval = 300
+tolerance = 100
+
+[[custom_groups]]
+名字 = "🔯 故障转移"
+类型 = "fallback"
+rule = [
+    "[]🇯🇵 夜桜秘湯",
+    "[]🇭🇰 蜡笔王国",
+    "[]🇹🇼 蓬萊玉枝",
+    "[]🇸🇬 星空浴場",
+    "[]🇺🇸 陽光海岸"
+]
+url = "http://www.apple.com/library/test/success.html"
+interval = 300
+
+[[custom_groups]]
+名字 = "🔮 负载均衡"
+类型 = "load-balance"
+strategy = "round-robin"
+rule = [
+    "[]🇯🇵 夜桜秘湯",
+    "[]🇭🇰 蜡笔王国",
+    "[]🇹🇼 蓬萊玉枝",
+    "[]🇸🇬 星空浴場",
+    "[]🇺🇸 陽光海岸"
+]
+url = "http://www.apple.com/library/test/success.html"
+interval = 300
+
+[[custom_groups]]
+名字 = "🏮 冷门负载"
+类型 = "load-balance"
+strategy = "round-robin"
+rule = [".*^(?!.*(🇯🇵|🇭🇰|🇹🇼|🇸🇬|🇺🇸|🇨🇳|IPLC))"]
+url = "http://www.apple.com/library/test/success.html"
+interval = 300
+
+[[rulesets]]
+group = "❄️ 节点选择"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/rules/Direct.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "[]GEOIP,CN"
+
+[[rulesets]]
+group = "🎏 漏网之鱼"
+ruleset = "[]FINAL"

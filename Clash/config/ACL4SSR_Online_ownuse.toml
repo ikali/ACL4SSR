@@ -96,8 +96,8 @@ interval = 300
 tolerance = 100
 
 [[custom_groups]]
-名字 = "🔯 故障转移"
-类型 = "fallback"
+name = "🔯 故障转移"
+type = "fallback"
 rule = [
     "[]🇯🇵 夜桜秘湯",
     "[]🇭🇰 蜡笔王国",
@@ -109,8 +109,8 @@ url = "http://www.apple.com/library/test/success.html"
 interval = 300
 
 [[custom_groups]]
-名字 = "🔮 负载均衡"
-类型 = "load-balance"
+name = "🔮 负载均衡"
+type = "load-balance"
 strategy = "round-robin"
 rule = [
     "[]🇯🇵 夜桜秘湯",
@@ -123,8 +123,8 @@ url = "http://www.apple.com/library/test/success.html"
 interval = 300
 
 [[custom_groups]]
-名字 = "🏮 冷门负载"
-类型 = "load-balance"
+name = "🏮 冷门负载"
+type = "load-balance"
 strategy = "round-robin"
 rule = [".*^(?!.*(🇯🇵|🇭🇰|🇹🇼|🇸🇬|🇺🇸|🇨🇳|IPLC))"]
 url = "http://www.apple.com/library/test/success.html"

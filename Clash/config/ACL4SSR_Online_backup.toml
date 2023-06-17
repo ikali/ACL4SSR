@@ -23,58 +23,37 @@ rule = [
 [[custom_groups]]
 name = "✉️ usdtvfk"
 type = "select"
-rule = [
-    "(!!GROUPID=0)",
-    "[]REJECT"
-]
+rule = ["!!GROUPID=0"]
 
 [[custom_groups]]
 name = "💌 usdtvfk"
 type = "select"
-rule = [
-    "(!!GROUPID=1)",
-    "[]REJECT"
-]
+rule = ["!!GROUPID=1"]
 
 [[custom_groups]]
 name = "🏝️ bujidao"
 type = "select"
-rule = [
-    "(!!GROUPID=2)",
-    "[]REJECT"
-]
+rule = ["!!GROUPID=2"]
 
 [[custom_groups]]
 name = "🍧 xueqiu
 type = "select"
-rule = [
-    "(!!GROUPID=3)",
-    "[]REJECT"
-]
+rule = ["!!GROUPID=3"]
 
 [[custom_groups]]
 name = "🇪🇺 欧盟机场"
 type = "select"
-rule = [
-    "(!!GROUPID=4)",
-    "[]REJECT"
-]
+rule = ["!!GROUPID=4"]
 
 [[custom_groups]]
 name = "💬 DiffAuto"
 type = "select"
-rule = [
-    "(!!GROUPID=5)",
-    "[]REJECT"
-]
+rule = ["!!GROUPID=5"]
 
 [[custom_groups]]
 name = "🎐 Zou"
 type = "select"
-rule = [
-    "(!!GROUPID=6)",
-    "[]REJECT"
-]
+rule = ["!!GROUPID=6"]
 
 [[custom_groups]]
 name = "🎯 全球直连"

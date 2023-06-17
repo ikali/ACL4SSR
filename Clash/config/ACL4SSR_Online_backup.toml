@@ -24,7 +24,7 @@ rule = [
 name = "✉️ usdtvfk"
 type = "select"
 rule = [
-    "!!GROUPID=0",
+    "GROUPID=0",
     "[]REJECT"
 ]
 
@@ -32,7 +32,7 @@ rule = [
 name = "💌 usdtvfk"
 type = "select"
 rule = [
-    "!!GROUPID=1",
+    "GROUPID=1",
     "[]REJECT"
 ]
 
@@ -40,7 +40,7 @@ rule = [
 name = "🏝️ bujidao"
 type = "select"
 rule = [
-    "!!GROUPID=2",
+    "GROUPID=2",
     "[]REJECT"
 ]
 
@@ -48,7 +48,7 @@ rule = [
 name = "🍧 xueqiu
 type = "select"
 rule = [
-    "!!GROUPID=3",
+    "GROUPID=3",
     "[]REJECT"
 ]
 
@@ -56,7 +56,7 @@ rule = [
 name = "🇪🇺 欧盟机场"
 type = "select"
 rule = [
-    "!!GROUPID=4",
+    "GROUPID=4",
     "[]REJECT"
 ]
 
@@ -64,7 +64,7 @@ rule = [
 name = "💬 DiffAuto"
 type = "select"
 rule = [
-    "!!GROUPID=5",
+    "GROUPID=5",
     "[]REJECT"
 ]
 
@@ -72,7 +72,7 @@ rule = [
 name = "🎐 Zou"
 type = "select"
 rule = [
-    "!!GROUPID=6",
+    "GROUPID=6",
     "[]REJECT"
 ]
 

@@ -155,6 +155,7 @@ add_emoji = true
 remove_old_emoji = true
 
 [[emojis.emoji]]
-import = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/base/emoji.toml"
+emoji = '🏳️‍🌈'
+import = "base/emoji.toml"
 
 clash_proxies_style = "flow"

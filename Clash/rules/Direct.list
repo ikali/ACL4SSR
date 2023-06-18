@@ -14,7 +14,7 @@ IP-CIDR,224.0.0.0/4,no-resolve
 # Router managed 路由器管理域名
 DOMAIN,router.asus.com
 DOMAIN,www.asusrouter.com
-RULE-SET,cncidr,DIRECT
+RULE-SET,cncidr
 
 # 软件直连
 PROCESS-NAME,emule.exe

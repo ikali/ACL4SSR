@@ -130,6 +130,11 @@ interval = 300
 lazy = true
 
 [[rulesets]]
+group = "cncidr"
+ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+type = "ipcidr"
+
+[[rulesets]]
 group = "DIRECT"
 ruleset = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/rules/Direct.list"
 

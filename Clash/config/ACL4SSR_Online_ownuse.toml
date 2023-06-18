@@ -131,11 +131,7 @@ lazy = true
 
 [[rulesets]]
 group = "DIRECT"
-ruleset = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/rules/Direct.list"
-
-[[rulesets]]
-group = "DIRECT"
-ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
 
 [[rulesets]]
 group = "DIRECT"

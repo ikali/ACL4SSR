@@ -135,7 +135,7 @@ ruleset = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/rules/Dire
 
 [[rulesets]]
 group = "DIRECT"
-ruleset = "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
 
 [[rulesets]]
 group = "DIRECT"

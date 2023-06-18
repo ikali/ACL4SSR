@@ -1,3 +1,5 @@
+RULE-SET,cncidr,DIRECT
+
 # 本地/局域网地址
 DOMAIN-SUFFIX,lan
 DOMAIN-SUFFIX,local

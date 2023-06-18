@@ -142,12 +142,12 @@ group = "🎏 漏网之鱼"
 ruleset = "[]FINAL"
 
 proxy-providers:
-  flareix:
+  cncidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
     interval: 43200
-    path: ./profiles/flareix.yaml
+    path: ./profiles/cncidr.yaml
     health-check:
       enable: true
       interval: 600

@@ -141,18 +141,6 @@ ruleset = "[]GEOIP,CN"
 group = "🎏 漏网之鱼"
 ruleset = "[]FINAL"
 
-proxy-providers:
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    interval: 43200
-    path: ./profiles/cncidr.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
 [emojis]
 add_emoji = true
 remove_old_emoji = true

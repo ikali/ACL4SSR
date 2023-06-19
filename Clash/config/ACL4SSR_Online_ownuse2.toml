@@ -8,15 +8,15 @@ clash_rule_base = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/ba
 name = "❄️ 节点选择"
 type = "select"
 rule = [
-    "[]🇯🇵 夜桜秘湯",
-    "[]🇭🇰 蜡笔王国",
-    "[]🇹🇼 蓬萊玉枝",
-    "[]🇸🇬 星空浴場",
-    "[]🇺🇸 陽光海岸",
-    "[]♨️ 手动选择",
-    "[]♻️ 自动选择",
-    "[]🔯 故障转移",
-    "[]🔮 负载均衡",
+    "[]🇯🇵 夜桜秘湯"，
+    "[]🇭🇰 蜡笔王国"，
+    "[]🇹🇼 蓬萊玉枝"，
+    "[]🇸🇬 星空浴場"，
+    "[]🇺🇸 陽光海岸"，
+    "[]♨️ 手动选择"，
+    "[]♻️ 自动选择"，
+    "[]🔯 故障转移"，
+    "[]🔮 负载均衡"，
     "[]🏮 冷门负载"
 ]
 
@@ -24,7 +24,7 @@ rule = [
 name = "♨️ 手动选择"
 type = "select"
 rule = [
-    ".*",
+    ".*"，
     "[]DIRECT"
 ]
 
@@ -32,7 +32,7 @@ rule = [
 name = "🎏 漏网之鱼"
 type = "select"
 rule = [
-    "[]❄️ 节点选择",
+    "[]❄️ 节点选择"，
     "[]DIRECT"
 ]
 
@@ -40,7 +40,7 @@ rule = [
 name = "🇯🇵 夜桜秘湯"
 type = "select"
 rule = [
-    "(🇯🇵|JP|Japan|日本|东京|大阪|埼玉|[^-]日)",
+    "(🇯🇵|JP|Japan|日本|东京|大阪|埼玉|[^-]日)"，
     "[]REJECT"
 ]
 
@@ -48,7 +48,7 @@ rule = [
 name = "🇭🇰 蜡笔王国"
 type = "select"
 rule = [
-    "(🇭🇰|HK|Hong Kong|HongKong|[^-]港)",
+    "(🇭🇰|HK|Hong Kong|HongKong|[^-]港)"，
     "[]REJECT"
 ]
 
@@ -56,7 +56,7 @@ rule = [
 name = "🇹🇼 蓬萊玉枝"
 type = "select"
 rule = [
-    "(🇹🇼|TW|Taiwan|[^-]台|新北|彰化|HINET)",
+    "(🇹🇼|TW|Taiwan|[^-]台|新北|彰化|HINET)"，
     "[]REJECT"
 ]
 
@@ -64,7 +64,7 @@ rule = [
 name = "🇸🇬 星空浴場"
 type = "select"
 rule = [
-    "(🇸🇬|SG|Singapore|新加坡|狮城|[^-]新)",
+    "(🇸🇬|SG|Singapore|新加坡|狮城|[^-]新)"，
     "[]REJECT"
 ]
 
@@ -72,7 +72,7 @@ rule = [
 name = "🇺🇸 陽光海岸"
 type = "select"
 rule = [
-    "(🇺🇸|US|United States|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥)",
+    "(🇺🇸|US|United States|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥)"，
     "[]REJECT"
 ]
 
@@ -80,8 +80,8 @@ rule = [
 name = "♻️ 自动选择"
 type = "url-test"
 rule = [
-    "[]🇯🇵 夜桜秘湯",
-    "[]🇭🇰 蜡笔王国",
+    "[]🇯🇵 夜桜秘湯"，
+    "[]🇭🇰 蜡笔王国"，
     "[]🇹🇼 蓬萊玉枝",
     "[]🇸🇬 星空浴場",
     "[]🇺🇸 陽光海岸"

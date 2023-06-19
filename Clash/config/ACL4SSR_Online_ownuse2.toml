@@ -5,8 +5,8 @@ overwrite_original_rules = true
 clash_rule_base = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/base/ownuseClashConfig.yml"
 
 [[custom_groups]]
-name = "❄️ 节点选择"
-type = "select"
+名字 = "❄️ 节点选择"
+类型 = "select"
 rule = [
     "[]🇯🇵 夜桜秘湯",
     "[]🇭🇰 蜡笔王国",
@@ -21,16 +21,16 @@ rule = [
 ]
 
 [[custom_groups]]
-name = "♨️ 手动选择"
-type = "select"
+名字 = "♨️ 手动选择"
+类型 = "select"
 rule = [
     ".*",
     "[]DIRECT"
 ]
 
 [[custom_groups]]
-name = "🎏 漏网之鱼"
-type = "select"
+名字 = "🎏 漏网之鱼"
+类型 = "select"
 rule = [
     "[]❄️ 节点选择",
     "[]DIRECT"

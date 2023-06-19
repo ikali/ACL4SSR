@@ -5,7 +5,7 @@ overwrite_original_rules = true
 clash_rule_base = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/base/ownuseClashConfig.yml"
 
 [[custom_groups]]
-import = "snippets/groups_forcerule.txt"
+import = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/config/1.yml"
 
 [[rulesets]]
 group = "DIRECT"

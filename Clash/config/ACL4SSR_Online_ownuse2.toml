@@ -24,7 +24,7 @@ rule = [
 name = "♨️ 手动选择"
 type = "select"
 rule = [
-    "GROUPID=1"，
+    GROUPID=1，
     "[]DIRECT"
 ]
 

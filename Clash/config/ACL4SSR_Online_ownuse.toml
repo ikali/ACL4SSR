@@ -65,7 +65,7 @@ rule = [
 name = "🇸🇬 星空浴場"
 type = "select"
 rule = [
-    "(🇸🇬|SG|Singapore|新加坡|狮城|[^-]新)",
+    "(🇸🇬|SG|Singapore|新加坡|狮城)",
     "[]REJECT"
 ]
 

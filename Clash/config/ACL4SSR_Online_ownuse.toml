@@ -25,7 +25,8 @@ name = "♨️ 手动选择"
 type = "select"
 rule = [
     ".*",
-    "[]DIRECT"
+    "[]DIRECT",
+    "[]REJECT"
 ]
 
 [[custom_groups]]

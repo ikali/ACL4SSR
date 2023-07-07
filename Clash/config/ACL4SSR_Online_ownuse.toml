@@ -57,7 +57,7 @@ rule = [
 name = "🇹🇼 蓬萊玉枝"
 type = "select"
 rule = [
-    "(🇹🇼|TW|Taiwan|台湾|[^-]台|新北|彰化|HINET)",
+    "(🇹🇼|TW|Taiwan|台[^-]|[^-]台|新北|彰化|HINET)",
     "[]REJECT"
 ]
 

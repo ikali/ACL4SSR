@@ -138,6 +138,10 @@ group = "DIRECT"
 ruleset = "https://raw.githubusercontent.com/ikali/ACL4SSR/main/Clash/rules/Direct.list"
 
 [[rulesets]]
+group = "❄️ 节点选择"
+ruleset = "[]GEOSITE,geolocation-!cn"
+
+[[rulesets]]
 group = "DIRECT"
 ruleset = "[]GEOSITE,CN"
 

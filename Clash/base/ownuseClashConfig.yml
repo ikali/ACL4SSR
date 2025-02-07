@@ -5,14 +5,12 @@
 
 port: 7890
 ipv6: false
-log-level: warning
-find-process-mode: always
+log-level: silent
 external-controller: 127.0.0.1:9090
 external-ui: ui
 
 dns:
   enable: true
-  prefer-h3: true
   listen: 0.0.0.0:53
-  default-nameserver: [223.5.5.5, 182.254.116.116]
-  nameserver: [https://106.52.218.142/verse, https://1.15.50.48/verse]
+  nameserver: [https://106.52.218.142/verse]
+  nameserver-policy: {"geosite: cn, private": [119.29.29.29]}

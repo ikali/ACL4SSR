@@ -12,5 +12,5 @@ external-ui: ui
 dns:
   enable: true
   listen: 0.0.0.0:53
-  nameserver: [https://106.52.218.142/verse]
+  nameserver: [https://1.0.0.2/dns-query]
   nameserver-policy: {"geosite: cn, private": [119.29.29.29]}

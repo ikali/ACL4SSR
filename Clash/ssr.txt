@@ -1,4 +1,0 @@
-proxies:
-  - {name: "🇯🇵 专线 日本 [0.2]", server: aexshbgp01.114837322.xyz, port: 14093, type: ss, cipher: chacha20-ietf-poly1305, password: lE9uL5fR3yR9, plugin: obfs, plugin-opts: {mode: http, host: 4aaef245bd.iqiyi.com}, udp: true}
-  - {name: 🇯🇵 Super 日本01, server: d3.alibabamysql.com, port: 1126, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 264735:x2YSMW, obfs-param: 70631264735.www.gov.hk, udp: true, tfo: false}
-  - {name: 🇯🇵 日本 ソフトバンク B01, server: jp06.graniterapids.com, port: 4978, type: ss, cipher: rc4-md5, password: q7bt8K, udp: true, tfo: false}
